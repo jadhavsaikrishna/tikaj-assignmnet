@@ -1,0 +1,23 @@
+Square Root time complexity ananlysis:
+
+here i applied Binary search algorithm to find square root
+
+for each step work get half from the previous;
+
+T(N) ->   T(N/2)+C
+T(N/2) -> T(N/4)+C
+.
+.
+T(1) -> C
+
+T(N)=T(N/2^i)+(i*c)
+
+T(N/2^i)=T(1);
+N/2^i = 1
+N=2^i
+=> logN(with base 2)=i -> no of time loops runs
+
+T(N)= O(logN(with base 2)) ~ O(logN)
+
+Big O analysiss of this algorithm is O(lonN)
+Space complexity is O(1) because no extra space
